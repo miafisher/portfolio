@@ -5,6 +5,11 @@ html {
   --green2-color: #5f7974;
   --beige-color: #c5bdba;
   --brown-color: #776b64;
+  --pink-color: #dbc9c9;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* typografi */
