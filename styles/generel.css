@@ -59,3 +59,115 @@ p {
   margin: 20px;
   color: var(--text-color);
 }
+
+/* header (mobile first) */
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem 2rem 0rem 1rem;
+  background: var(--beige-color);
+  /* border: 1px solid black; */
+}
+
+nav a {
+  align-items: start;
+  justify-content: center;
+  padding: 4px;
+  width: 100px;
+  border-radius: 10px;
+  text-align: center;
+  color: var(--text-color);
+  font-family: "montserrat";
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
+}
+
+.logo img {
+  height: auto;
+  width: 100%;
+}
+
+.knap {
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+nav {
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: end;
+  display: none;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.4rem;
+  gap: 50px;
+}
+
+.toggle-btn {
+  display: block; /* Vis knappen, når viewporten maksimalt er 800px */
+  cursor: pointer;
+  all: unset;
+}
+
+.main-menu {
+  display: contents; /* Fjern ".main-menu"-boksen fra ligningen, når viewporten maksimalt er 600px, men behold børnene, så disse deltager i flex-kontekten */
+}
+
+.main-menu ul {
+  display: none; /* Fjern menu-listen som standard */
+}
+
+.main-menu.shown ul {
+  /* Vis menu-listen, når klassen ".shown" er til stede */
+  border-top: 1px solid #000;
+  padding-top: 1rem;
+  display: flex;
+  flex: 1 1 100%;
+  flex-flow: column;
+}
+header ul li a:hover {
+  color: var(--green2-color);
+}
+
+@media (min-width: 600px) {
+  header {
+    grid-template-columns: revert;
+  }
+
+  .logo {
+    height: 100px;
+    width: 100px;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  nav {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    display: block;
+  }
+
+  .toggle-btn {
+    display: none; /* Skjul knappen som standard */
+  }
+
+  .main-menu ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
