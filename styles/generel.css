@@ -1,0 +1,56 @@
+/* Custom properties -DX */
+html {
+  --text-color: #373232;
+  --green1-color: #b9c6c4;
+  --green2-color: #5f7974;
+  --beige-color: #c5bdba;
+  --brown-color: #776b64;
+}
+
+/* typografi */
+@font-face {
+  font-family: "quicksand";
+  src: url("/font/quicksand-variablefont_wght-webfont.woff2") format("woff2");
+  font-family: "montserrat";
+  src: url("/font/montserrat-variablefont_wght-webfont.woff2") format("woff2");
+}
+
+h1 {
+  font-family: "quicksand";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 1.1;
+  margin: 20px;
+  color: #373232;
+}
+
+h2 {
+  font-family: "quicksand";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 1.1;
+  margin: 20px;
+  color: var(--text-color);
+}
+
+h3 {
+  font-family: "quicksand";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin: 20px;
+  color: var(--text-color);
+}
+
+p {
+  font-family: "montserrat";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.1;
+  margin: 20px;
+  color: var(--text-color);
+}
