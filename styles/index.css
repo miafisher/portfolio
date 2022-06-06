@@ -9,3 +9,48 @@ main {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* mobile first */
+#container {
+  background-color: white;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding: 5%;
+}
+
+.splash_img {
+  background-image: url(../images/splash_img.webp);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 50/50;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.h2 {
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  #container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+  }
+
+  .splash_img {
+    grid-column: 2;
+  }
+
+  .h2 {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: start;
+  }
+}
