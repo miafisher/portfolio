@@ -166,3 +166,22 @@ header ul li a:hover {
     justify-content: flex-end;
   }
 }
+
+/* footer */
+footer {
+  text-align: center;
+  padding-block: 1rem;
+  background: var(--brown-color);
+  position: sticky;
+  top: 100vh;
+}
+
+footer p {
+  font-family: "montserrat";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.8rem;
+  line-height: 1.1;
+  margin: 20px;
+  color: var(--beige-color);
+}
