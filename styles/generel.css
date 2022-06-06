@@ -63,8 +63,8 @@ p {
 /* header (mobile first) */
 header {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 1rem 2rem 0rem 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem 2rem 1rem 1rem;
   background: var(--beige-color);
   /* border: 1px solid black; */
 }
@@ -72,13 +72,13 @@ header {
 nav a {
   align-items: start;
   justify-content: center;
-  padding: 4px;
+  padding: 30px;
   width: 100px;
   border-radius: 10px;
   text-align: center;
   color: var(--text-color);
   font-family: "montserrat";
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-decoration: none;
 }
 
@@ -87,7 +87,7 @@ nav a {
   width: 50px;
   grid-column: 2;
   grid-row: 1;
-  justify-self: center;
+  justify-self: end;
 }
 
 .logo img {
@@ -95,14 +95,8 @@ nav a {
   width: 100%;
 }
 
-.knap {
-  border: none;
-  padding: 0;
-  background: none;
-}
-
 nav {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 2;
   justify-self: end;
   display: none;
@@ -132,7 +126,7 @@ header ul {
 
 .main-menu.shown ul {
   /* Vis menu-listen, når klassen ".shown" er til stede */
-  border-top: 1px solid #000;
+  /* border-top: 1px solid #000; */
   padding-top: 1rem;
   display: flex;
   flex: 1 1 100%;
@@ -142,7 +136,7 @@ header ul li a:hover {
   color: var(--green2-color);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   header {
     grid-template-columns: revert;
   }
@@ -150,14 +144,14 @@ header ul li a:hover {
   .logo {
     height: 100px;
     width: 100px;
-    grid-column: 1;
-    grid-row: 1;
-    justify-self: start;
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    justify-self: end;
   }
 
   nav {
-    grid-column: 2;
-    grid-row: 1;
+    grid-column: 1;
+    grid-row: 2;
     justify-self: center;
     display: block;
   }
@@ -168,6 +162,7 @@ header ul li a:hover {
 
   .main-menu ul {
     display: flex;
+    grid-row: 2;
     justify-content: flex-end;
   }
 }
