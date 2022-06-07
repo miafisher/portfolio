@@ -9,3 +9,8 @@ main {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* mobile first */
+h1 {
+  text-align: center;
+}
