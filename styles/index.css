@@ -33,14 +33,16 @@ h1 {
   text-align: center;
 }
 
-.h2 {
+.tekst p {
   text-align: center;
+  font-style: italic;
+  line-height: 2;
 }
 
 @media (min-width: 800px) {
   #container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
 
@@ -48,7 +50,7 @@ h1 {
     grid-column: 2;
   }
 
-  .h2 {
+  .tekst {
     grid-column: 1;
     grid-row: 1;
     text-align: start;
