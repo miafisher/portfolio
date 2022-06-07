@@ -11,6 +11,48 @@ main {
 }
 
 /* mobile first */
+#container {
+  background-color: white;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding: 5%;
+}
+
+.img_1 {
+  background-image: url(../images/redesign_1.webp);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 50/50;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
 h1 {
   text-align: center;
+}
+
+.tekst p {
+  text-align: start;
+  font-style: italic;
+  line-height: 2;
+}
+
+@media (min-width: 800px) {
+  #container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .splash_img {
+    grid-column: 2;
+  }
+
+  .tekst {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: start;
+  }
 }
