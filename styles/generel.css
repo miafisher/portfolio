@@ -136,7 +136,7 @@ header ul li a:hover {
   color: var(--green2-color);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   header {
     grid-template-columns: revert;
   }

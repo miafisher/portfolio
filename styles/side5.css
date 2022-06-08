@@ -44,6 +44,10 @@ h2 {
   line-height: 2;
 }
 
+p {
+  line-height: 2;
+}
+
 @media (min-width: 800px) {
   #container {
     display: grid;
@@ -62,7 +66,7 @@ h2 {
   }
   .grid_1-1-1 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr 1fr;
     gap: 10px;
   }
   .flex-col {
