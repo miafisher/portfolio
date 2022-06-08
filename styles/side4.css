@@ -20,13 +20,14 @@ main {
 }
 
 .img_1 {
-  background-image: url(../images/redesign_1.webp);
+  background-image: url(../images/index_redesign.webp);
   background-size: cover;
   width: 100%;
   height: auto;
   aspect-ratio: 50/50;
   margin: 0 auto;
   border-radius: 50%;
+  background-position: 46%;
 }
 
 h1 {
