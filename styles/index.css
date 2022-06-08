@@ -10,7 +10,39 @@ main {
   margin: 0 auto;
 }
 
-/* mobile first */
+/* mobile */
+#splash {
+  background-image: url(../images/splash_img.webp);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: 25% 0%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.splash_h1 {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+}
+
+.splash_p {
+  grid-column: 1;
+  grid-row: 2;
+  text-align: center;
+}
+
+.p_font {
+  color: white;
+}
+
 #container {
   background-color: white;
   background-size: cover;
@@ -19,40 +51,73 @@ main {
   padding: 5%;
 }
 
-.splash_img {
-  background-image: url(../images/splash_img.webp);
+.box_img1 {
+  background: url(../images/web_1.webp);
   background-size: cover;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 50/50;
-  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  background-position: 50%;
   border-radius: 50%;
 }
 
-h1 {
-  text-align: center;
+.box_img2 {
+  background: url(../images/ux_1.webp);
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  background-position: 50%;
+  border-radius: 50%;
 }
 
-.tekst p {
-  text-align: center;
-  font-style: italic;
-  line-height: 2;
+.box_img3 {
+  background: url(../images/spil_1.webp);
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  background-position: 50%;
+  border-radius: 50%;
+}
+
+.box_img4 {
+  background: url(../images/redesign_1.webp);
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  background-position: 50%;
+  border-radius: 50%;
+}
+
+.box_img5 {
+  background: url(../images/splash_img.webp);
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  background-position: 50%;
+  border-radius: 50%;
 }
 
 @media (min-width: 800px) {
+  #splash {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 20/19;
+  }
+
   #container {
+    height: 600px;
+  }
+
+  .grid_1-1-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
-
-  .splash_img {
-    grid-column: 2;
+  .flex-col {
+    display: flex;
+    flex-direction: column;
   }
 
-  .tekst {
-    grid-column: 1;
-    grid-row: 1;
-    text-align: start;
+  .flex-col :last-child {
+    margin-top: auto;
   }
 }
