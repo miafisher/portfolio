@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "rexlia";
+  src: url("/fonts/rexlia_rg-webfont.woff2") format("woff2");
+  font-family: "pacfont";
+  src: url("/fonts/pac-font-webfont.woff2") format("woff2");
+  font-family: "gameplayed";
+  src: url("/fonts/gameplayedoutline-wrx8-webfont.woff2") format("woff2");
+}
+
+/*reset*/
+* {
+  all: unset;
+  display: revert;
+  cursor: revert;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* typografi */
+h1 {
+  font-family: pacfont;
+  /* font-size: 55px; */
+  font-size: 2rem;
+  line-height: 1.1;
+  /* text-transform: ; */
+  margin: 40px 40px 40px 0px;
+  color: #f63560;
+}
+
+h2 {
+  font-family: gameplayed;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin: 20px;
+  color: #f63560;
+}
+
+h3 {
+  font-family: rexlia;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin: 20px;
+  color: black;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  color: black;
+  margin: 20px;
+}
+
+.p_font {
+  font-family: rexlia;
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+body {
+  min-height: 100vh;
+}
+
+footer {
+  text-align: center;
+  padding-block: 1rem;
+  background: hotpink;
+  color: white;
+  position: sticky;
+  top: 100vh;
+}
+
+@media (min-width: 616px) {
+  h1 {
+    font-size: 4rem;
+  }
+}

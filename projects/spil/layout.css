@@ -1,0 +1,80 @@
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Menubar */
+
+header {
+  width: 100%;
+  position: sticky;
+  background-color: #ff931e;
+  top: 0;
+  padding: 1rem 2rem;
+  list-style: none;
+}
+
+nav a {
+  /* Kode der gør det muligt at give boksene en størrelse (De skal være block-elementer for at kunne angive en width) */
+  display: flex;
+  align-items: start;
+  justify-content: center;
+
+  /*Styling af bokse: width, padding, border-radius, text-align*/
+  border: 2px solid black;
+  padding: 4px;
+  width: 100px;
+  border-radius: 10px;
+  text-align: center;
+
+  /*Styling af link tekst: color, background-color, font-family, font-size, font-weight, text-decoration*/
+  color: white;
+  background-color: black;
+  font-family: postinostd;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.logo {
+  background-image: url(logo_2.svg);
+  background-size: cover;
+  height: 10%;
+  width: 10%;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.4rem;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+@media (min-width: 500px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
+    flex-wrap: wrap;
+    overflow-x: auto;
+  }
+
+  header nav ul {
+    gap: 10px;
+  }
+}
+
+@media (min-width: 600px) {
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin: 5%;
+    border: solid black;
+  }
+}

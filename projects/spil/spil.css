@@ -1,0 +1,437 @@
+#screen {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+}
+
+#game {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#start {
+  background-image: url(svg/start.svg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#start_knap {
+  background-image: url(svg/logo.svg);
+  background-size: cover;
+  width: 44%;
+  aspect-ratio: 200/200;
+  position: absolute;
+  top: 15%;
+  left: 22%;
+}
+
+#genstart1,
+#genstart2 {
+  background-image: url(svg/start_knap.svg);
+  background-size: cover;
+  width: 17%;
+  aspect-ratio: 200/200;
+  position: absolute;
+  top: 72%;
+  left: 1%;
+}
+
+#game_over {
+  background-image: url(svg/game_over.svg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#game_over_txt {
+  color: black;
+  position: absolute;
+  top: 60%;
+  left: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: postino-std, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#game_over_points {
+  color: black;
+  position: absolute;
+  top: 66%;
+  left: 5%;
+  width: 100%;
+  text-align: center;
+  font-family: postino-std, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#level_complete {
+  background-image: url(svg/level_complete.svg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#level_complete_txt {
+  color: black;
+  position: absolute;
+  top: 58%;
+  left: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: postino-std, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#level_complete_points {
+  color: black;
+  position: absolute;
+  top: 68%;
+  left: 5%;
+  width: 100%;
+  text-align: center;
+  font-family: postino-std, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#game_background {
+  background-image: url(svg/baggrund.svg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#game_elements {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#eric_container {
+  width: 20%;
+  aspect-ratio: 200/200;
+  position: absolute;
+  top: 52%;
+  left: 59%;
+}
+
+#eric_sprite {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.neutral_eric {
+  background-image: url(svg/neutral_eric.svg);
+}
+
+.glad_eric {
+  background-image: url(svg/glad_eric.svg);
+}
+
+.sur_eric {
+  background-image: url(svg/sur_eric.svg);
+}
+
+.opkast_eric {
+  background-image: url(svg/opkast_eric.svg);
+}
+
+#kodben_container1 {
+  width: 10%;
+  aspect-ratio: 200/200;
+  position: absolute;
+}
+
+#kodben_sprite1 {
+  background-image: url(svg/kodben_venstre.svg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#kodben_container2 {
+  width: 8%;
+  aspect-ratio: 200/200;
+  position: absolute;
+}
+
+#kodben_sprite2 {
+  background-image: url(svg/kodben_højre.svg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#gulerod_container1 {
+  width: 10%;
+  aspect-ratio: 200/200;
+  position: absolute;
+}
+
+#gulerod_sprite1 {
+  background-image: url(svg/gulerod_venstre.svg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#gulerod_container2 {
+  width: 8%;
+  aspect-ratio: 200/200;
+  position: absolute;
+}
+
+#gulerod_sprite2 {
+  background-image: url(svg/gulerod_højre.svg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#chokolade_container1 {
+  width: 10%;
+  aspect-ratio: 200/200;
+  position: absolute;
+}
+
+#chokolade_sprite1 {
+  background-image: url(svg/chokolade_venstre.svg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#chokolade_container2 {
+  width: 8%;
+  aspect-ratio: 200/200;
+  position: absolute;
+}
+
+#chokolade_sprite2 {
+  background-image: url(svg/chokolade_højre.svg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#game_ui {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  pointer-events: none;
+}
+
+#score_board {
+  width: 10%;
+  aspect-ratio: 200/200;
+  position: absolute;
+  top: 81%;
+  left: 1%;
+  background-image: url(svg/points.svg);
+  background-size: cover;
+}
+
+#score {
+  color: white;
+  font-family: postino-std, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 21%;
+  left: 30%;
+}
+
+#energy_board {
+  aspect-ratio: 200/600;
+  width: 5%;
+  position: absolute;
+  top: 2%;
+  left: 92%;
+}
+
+#liv1 {
+  background-image: url(svg/liv.svg);
+  background-size: cover;
+  aspect-ratio: 200/200;
+  width: 100%;
+  height: 100%;
+}
+#liv2 {
+  background-image: url(svg/liv.svg);
+  background-size: cover;
+  aspect-ratio: 200/200;
+  width: 100%;
+  height: 100%;
+}
+#liv3 {
+  background-image: url(svg/liv.svg);
+  background-size: cover;
+  aspect-ratio: 200/200;
+  width: 100%;
+  height: 100%;
+}
+
+#time_board {
+  width: 18%;
+  aspect-ratio: 295/200;
+  position: absolute;
+  top: 78%;
+  left: 82%;
+  background-image: url(svg/tid.svg);
+  background-size: cover;
+}
+
+#vis_tid {
+  width: 10%;
+  aspect-ratio: 1/1;
+  font-family: postino-std, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 27%;
+  left: 34%;
+}
+/* Animationer  */
+
+.falling {
+  animation-name: falling_kf;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes falling_kf {
+  0% {
+    transform: translateY(-600%);
+  }
+
+  100% {
+    transform: translateY(600%);
+  }
+}
+
+.rotation {
+  animation-name: rotation_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation_kf {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.zoom_out {
+  animation-name: zoom_out_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zoom_out_kf {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.zoom_in {
+  animation-name: zoom_in_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zoom_in_kf {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(4);
+  }
+}
+
+.frys {
+  animation-play-state: paused;
+}
+
+.pos1 {
+  top: 2vw;
+  left: 5vw;
+}
+
+.pos2 {
+  top: 15vw;
+  left: 35vw;
+}
+
+.pos3 {
+  top: 25vw;
+  left: 30vw;
+}
+
+.pos4 {
+  top: 20vw;
+  left: 10vw;
+}
+
+.pos5 {
+  top: 10vw;
+  left: 50vw;
+}
+
+.pos6 {
+  top: 6vw;
+  left: 20vw;
+}
+
+.delay1 {
+  animation-delay: 1s;
+}
+
+.delay2 {
+  animation-delay: 3s;
+}
+
+.delay3 {
+  animation-delay: 5s;
+}
+
+.hide {
+  display: none;
+}
