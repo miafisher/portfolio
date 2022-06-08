@@ -16,13 +16,13 @@ main {
   background-size: cover;
   width: 100%;
   height: auto;
-  padding: 5%;
+  /* padding: 5%; */
 }
 
-.splash_img {
+.cv_img {
   background-image: url(../images/IMG_5810.webp);
   background-size: cover;
-  width: 100%;
+  width: 70%;
   height: auto;
   aspect-ratio: 50/50;
   margin: 0 auto;
@@ -31,6 +31,11 @@ main {
 
 h1 {
   text-align: center;
+}
+
+h2 {
+  text-align: start;
+  border-bottom: 1px solid #000;
 }
 
 .tekst p {
@@ -54,5 +59,18 @@ h1 {
     grid-column: 1;
     grid-row: 1;
     text-align: start;
+  }
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-col :last-child {
+    margin-top: auto;
   }
 }
