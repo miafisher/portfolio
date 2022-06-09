@@ -40,16 +40,21 @@ h1 {
   line-height: 2;
 }
 
-.tekst h3 {
-  background-color: var(--green2-color);
-  color: white;
+.link {
+  background-color: var(--green1-color);
+  height: 50px;
+  width: 400px;
+  margin: 5px;
+}
+.link h3 {
+  color: var(--brown-color);
   text-align: center;
   font-style: italic;
   line-height: 2;
 }
 
-.tekst h3:hover {
-  color: var(--pink-color);
+.link h3:hover {
+  color: var(--text-color);
 }
 
 @media (min-width: 800px) {
