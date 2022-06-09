@@ -36,6 +36,12 @@ h1 {
 h2 {
   text-align: start;
   border-bottom: 1px solid #000;
+  margin: 5px;
+}
+
+h3 {
+  line-height: 2;
+  margin: 5px;
 }
 
 .tekst p {
@@ -46,6 +52,7 @@ h2 {
 
 p {
   line-height: 2;
+  margin: 5px;
 }
 
 @media (min-width: 800px) {
