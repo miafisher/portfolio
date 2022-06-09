@@ -14,9 +14,8 @@ h1 {
   text-align: center;
 }
 
-/* mobile */
-
-#container_1 {
+/* mobile first */
+#container {
   background-color: white;
   background-size: cover;
   width: 100%;
@@ -24,7 +23,59 @@ h1 {
   padding: 5%;
 }
 
-.gallery {
+.img_1 {
+  background-image: url(../images/index_web.webp);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 50/50;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-position: 50%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.tekst p {
+  text-align: start;
+  font-style: italic;
+  line-height: 2;
+}
+
+.tekst h3 {
+  background-color: var(--green2-color);
+  color: white;
+  text-align: center;
+  font-style: italic;
+  line-height: 2;
+}
+
+.tekst h3:hover {
+  color: var(--pink-color);
+}
+
+@media (min-width: 800px) {
+  #container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .splash_img {
+    grid-column: 2;
+  }
+
+  .tekst {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: start;
+  }
+}
+
+/* Gammel kode */
+/* .gallery {
   --gap: 16px;
   --num-cols: 3;
   --row-height: 200px;
@@ -46,9 +97,9 @@ h1 {
   width: 200px;
   height: 200px;
   /* object-fit: cover; */
-  /* border-radius: 50%; */
-}
+/* border-radius: 50%; */
 
+/* 
 .box_img1 {
   background: url(../images/web_1.webp);
   background-size: cover;
@@ -79,23 +130,4 @@ h1 {
 
 .gallery-row-2 {
   grid-row: 1 / span 2;
-}
-
-.tekst h3 {
-  background-color: var(--green2-color);
-  color: white;
-  text-align: center;
-  font-style: italic;
-  line-height: 2;
-}
-
-.tekst h3:hover {
-  color: var(--pink-color);
-}
-
-/* web */
-@media (min-width: 800px) {
-  #container_1 {
-    height: 600px;
-  }
-}
+} */
