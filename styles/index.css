@@ -43,7 +43,7 @@ h1 {
   color: white;
 }
 
-#container {
+#container_index {
   background-color: white;
   background-size: cover;
   width: 100%;
@@ -96,7 +96,7 @@ h1 {
   border-radius: 50%;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   #splash {
     width: 100%;
     /* height: auto; */

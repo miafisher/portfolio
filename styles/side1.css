@@ -10,13 +10,9 @@ main {
   margin: 0 auto;
 }
 
-h1 {
-  text-align: center;
-}
-
-/* mobile */
 /* mobile first */
 #container {
+  display: grid;
   background-color: white;
   background-size: cover;
   width: 100%;
@@ -39,8 +35,13 @@ h1 {
   text-align: center;
 }
 
+.tekst {
+  justify-self: center;
+  margin: 10%;
+}
+
 .tekst p {
-  text-align: start;
+  text-align: center;
   font-style: italic;
   line-height: 2;
 }
@@ -62,7 +63,7 @@ h1 {
   color: var(--text-color);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   #container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -76,7 +77,6 @@ h1 {
   .tekst {
     grid-column: 1;
     grid-row: 1;
-    text-align: start;
   }
 }
 
