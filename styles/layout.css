@@ -31,7 +31,7 @@ main {
   text-align: center;
 }
 
-h1 {
+.splash_h1 h1 {
   color: white;
 }
 
@@ -122,13 +122,12 @@ h1 {
 }
 
 .tekst {
-  justify-self: center;
-  margin: 10%;
+  text-align: start;
+  margin: 5%;
 }
 
 .tekst p {
-  text-align: center;
-  font-style: italic;
+  font-style: normal;
   line-height: 2;
 }
 
@@ -136,7 +135,7 @@ h1 {
   background-color: var(--green1-color);
   height: 50px;
   width: 400px;
-  margin: 5px;
+  margin: 5%;
 }
 .link h3 {
   color: var(--brown-color);
@@ -158,6 +157,7 @@ h1 {
   margin: 0 auto;
   border-radius: 50%;
   background-position: 50%;
+  margin-top: 5%;
 }
 
 .img_2 {
@@ -168,6 +168,7 @@ h1 {
   aspect-ratio: 50/50;
   margin: 0 auto;
   border-radius: 50%;
+  margin-top: 5%;
 }
 
 .img_3 {
@@ -178,6 +179,7 @@ h1 {
   aspect-ratio: 50/50;
   margin: 0 auto;
   border-radius: 50%;
+  margin-top: 5%;
 }
 
 .img_4 {
@@ -189,6 +191,7 @@ h1 {
   margin: 0 auto;
   border-radius: 50%;
   background-position: 46%;
+  margin-top: 5%;
 }
 
 /* SIDE 5  */
@@ -220,7 +223,7 @@ p {
 
 /* WEB */
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   /* index */
   #splash {
     width: 100%;
@@ -254,15 +257,19 @@ p {
   }
   .img_1 {
     grid-column: 2;
+    grid-row: 1;
   }
   .img_2 {
     grid-column: 2;
+    grid-row: 1;
   }
   .img_3 {
     grid-column: 2;
+    grid-row: 1;
   }
   .img_4 {
     grid-column: 2;
+    grid-row: 1;
   }
 
   /* side 5  */
