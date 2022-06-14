@@ -283,7 +283,7 @@ p {
 
 /* WEB */
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   /* index */
   #splash {
     width: 100%;

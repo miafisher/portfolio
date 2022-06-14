@@ -114,7 +114,7 @@ header ul {
   margin: 0;
   padding: 0;
   padding-bottom: 0.4rem;
-  gap: 50px;
+  /* gap: 50px; */
 }
 
 .toggle-btn {
@@ -143,7 +143,7 @@ header ul li a:hover {
   color: var(--green2-color);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   header {
     grid-template-columns: revert;
   }
