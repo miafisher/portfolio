@@ -15,9 +15,9 @@ img {
 /* typografi */
 @font-face {
   font-family: "quicksand";
-  src: url("/font/quicksand-variablefont_wght-webfont.woff2") format("woff2");
+  src: url("../font/quicksand-variablefont_wght-webfont.woff2") format("woff2");
   font-family: "montserrat";
-  src: url("/font/montserrat-variablefont_wght-webfont.woff2") format("woff2");
+  src: url("../font/montserrat-variablefont_wght-webfont.woff2") format("woff2");
 }
 
 h1 {
