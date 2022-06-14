@@ -6,7 +6,7 @@
 }
 
 main {
-  max-width: auto;
+  max-width: 2000px;
   margin: 0 auto;
   background-color: var(--yellow-color);
 }
