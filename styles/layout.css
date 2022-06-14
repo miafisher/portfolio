@@ -96,7 +96,7 @@ main {
 }
 
 .box_img5 {
-  background: url(../images/logo.svg);
+  background: url(../images/portfolio_img.svg);
   background-size: cover;
   width: 150px;
   height: 150px;
@@ -157,9 +157,10 @@ h1 {
 
 .link h3 {
   color: var(--text-color);
-  text-align: center;
+  text-align: start;
   font-style: normal;
   line-height: 1.6;
+  padding-top: 5%;
 }
 
 .link h3:hover {
@@ -282,7 +283,7 @@ p {
 
 /* WEB */
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   /* index */
   #splash {
     width: 100%;
