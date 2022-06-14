@@ -141,7 +141,7 @@ h1 {
   color: var(--brown-color);
   text-align: center;
   font-style: normal;
-  line-height: 2;
+  line-height: 1.6;
 }
 
 .link h3:hover {
