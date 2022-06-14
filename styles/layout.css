@@ -343,9 +343,7 @@ p {
   }
 
   /* side 6  */
-  .cv_img {
-    /* grid-column: 2; */
-  }
+
   .grid_1-2-1 {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
