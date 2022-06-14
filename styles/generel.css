@@ -1,11 +1,17 @@
 /* Custom properties -DX */
 html {
   --text-color: #373232;
-  --green1-color: #b9c6c4;
+  --light-color: #f2ede8;
+  --yellow-color: #eee9e0;
+  --grey-color: #d2d1d2;
+  --beige-color: #c5bdba;
+  --brown-color: #776b64;
+
+  /* --green1-color: #b9c6c4;
   --green2-color: #5f7974;
   --beige-color: #c5bdba;
   --brown-color: #776b64;
-  --pink-color: #dbc9c9;
+  --pink-color: #dbc9c9; */
 }
 
 img {
@@ -26,7 +32,8 @@ h1 {
   font-style: normal;
   font-size: 5rem;
   line-height: 1.1;
-  margin: 40px;
+  /* margin-top: 40px; */
+  padding-top: 40px;
   color: #373232;
 }
 
@@ -52,12 +59,12 @@ h3 {
 
 p {
   font-family: "montserrat";
-  font-weight: 400;
   font-style: normal;
   font-size: 1rem;
   line-height: 1.1;
   margin: 20px;
   color: var(--text-color);
+  font-weight: bolder;
 }
 
 /* header (mobile first) */
@@ -65,7 +72,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 1rem 2rem 1rem 1rem;
-  background: var(--beige-color);
+  background: var(--light-color);
   /* border: 1px solid black; */
 }
 

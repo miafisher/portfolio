@@ -6,8 +6,9 @@
 }
 
 main {
-  max-width: 1200px;
+  max-width: auto;
   margin: 0 auto;
+  background-color: var(--yellow-color);
 }
 
 /* MOBILE */
@@ -46,7 +47,7 @@ main {
 }
 
 #container_index {
-  background-color: white;
+  /* background-color: var(--yellow-color); */
   background-size: cover;
   width: 100%;
   height: auto;
@@ -115,7 +116,7 @@ main {
 /* PROJECTS */
 #container {
   display: grid;
-  background-color: white;
+  /* background-color: var(--yellow-color); */
   background-size: cover;
   width: 100%;
   height: auto;
@@ -124,7 +125,7 @@ main {
 
 #container_1 {
   display: grid;
-  background-color: white;
+  /* background-color: var(--yellow-color); */
   background-size: cover;
   width: 100%;
   height: auto;
@@ -133,7 +134,7 @@ main {
 
 #container_2 {
   display: grid;
-  background-color: white;
+  /* background-color: var(--yellow-color); */
   background-size: cover;
   width: 100%;
   height: auto;
@@ -154,21 +155,15 @@ h1 {
   line-height: 2;
 }
 
-.link {
-  background-color: var(--green1-color);
-  height: 50px;
-  width: 400px;
-  margin: 5%;
-}
 .link h3 {
-  color: var(--brown-color);
+  color: var(--text-color);
   text-align: center;
   font-style: normal;
   line-height: 1.6;
 }
 
 .link h3:hover {
-  color: var(--text-color);
+  color: white;
 }
 
 .img_1 {
@@ -265,24 +260,24 @@ p {
 }
 
 .flex-col h3:hover {
-  color: var(--green2-color);
+  color: white;
 }
 
 .flex-col p {
   text-align: right;
-  font-style: italic;
+  font-weight: bolder;
 }
 
 .flex-col_om {
-  background-color: var(--pink-color);
+  background-color: var(--grey-color);
 }
 
 .flex-col_arb {
-  background-color: var(--pink-color);
+  background-color: var(--grey-color);
 }
 
 .flex-col_udd {
-  background-color: var(--pink-color);
+  background-color: var(--grey-color);
 }
 
 /* WEB */
