@@ -171,7 +171,7 @@ header ul li a:hover {
 footer {
   text-align: center;
   padding-block: 1rem;
-  background: white;
+  background: var(--brown-color);
   position: sticky;
   top: 100vh;
 }
@@ -183,5 +183,5 @@ footer p {
   font-size: 0.8rem;
   line-height: 1.1;
   margin: 20px;
-  color: var(--beige-color);
+  color: white;
 }
