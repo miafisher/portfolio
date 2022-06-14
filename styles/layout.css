@@ -114,7 +114,7 @@ main {
   background-size: cover;
   width: 100%;
   height: auto;
-  padding: 5%;
+  padding: 0% 5% 5% 5%;
 }
 
 h1 {
@@ -198,7 +198,7 @@ h1 {
 .cv_img {
   background-image: url(../images/IMG_5810.webp);
   background-size: cover;
-  width: 70%;
+  width: 100%;
   height: auto;
   aspect-ratio: 50/50;
   margin: 0 auto;
@@ -221,6 +221,18 @@ p {
   margin: 5px;
 }
 
+.flex-col_om {
+  background-color: var(--pink-color);
+}
+
+.flex-col_arb {
+  background-color: var(--pink-color);
+}
+
+.flex-col_udd {
+  background-color: var(--pink-color);
+}
+
 /* WEB */
 
 @media (min-width: 800px) {
@@ -230,7 +242,7 @@ p {
     aspect-ratio: 20/19;
   }
   #container_index {
-    height: 800px;
+    height: 1000px;
   }
   .grid_1-1-1 {
     display: grid;
@@ -240,6 +252,7 @@ p {
   .flex-col {
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
   }
   /* .flex-col :last-child {
     margin-top: auto;
