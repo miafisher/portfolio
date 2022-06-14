@@ -151,7 +151,7 @@ h1 {
 .img_1 {
   background-image: url(../images/index_web.webp);
   background-size: cover;
-  width: 100%;
+  width: 90%;
   height: auto;
   aspect-ratio: 50/50;
   margin: 0 auto;
@@ -163,7 +163,7 @@ h1 {
 .img_2 {
   background-image: url(../images/ux_1.webp);
   background-size: cover;
-  width: 100%;
+  width: 90%;
   height: auto;
   aspect-ratio: 50/50;
   margin: 0 auto;
@@ -174,7 +174,7 @@ h1 {
 .img_3 {
   background-image: url(../images/index_spil.webp);
   background-size: cover;
-  width: 100%;
+  width: 90%;
   height: auto;
   aspect-ratio: 50/50;
   margin: 0 auto;
@@ -185,7 +185,7 @@ h1 {
 .img_4 {
   background-image: url(../images/index_redesign.webp);
   background-size: cover;
-  width: 100%;
+  width: 90%;
   height: auto;
   aspect-ratio: 50/50;
   margin: 0 auto;
@@ -194,11 +194,23 @@ h1 {
   margin-top: 5%;
 }
 
-/* SIDE 5  */
+.img_5 {
+  background-image: url(../images/logo.svg);
+  background-size: cover;
+  width: 90%;
+  height: auto;
+  aspect-ratio: 50/50;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-position: 46%;
+  margin-top: 5%;
+}
+
+/* SIDE 6  */
 .cv_img {
   background-image: url(../images/IMG_5810.webp);
   background-size: cover;
-  width: 100%;
+  width: 70%;
   height: auto;
   aspect-ratio: 50/50;
   margin: 0 auto;
@@ -235,7 +247,7 @@ p {
 
 /* WEB */
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   /* index */
   #splash {
     width: 100%;
@@ -285,7 +297,12 @@ p {
     grid-row: 1;
   }
 
-  /* side 5  */
+  .img_5 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /* side 6  */
   .cv_img {
     grid-column: 2;
   }
